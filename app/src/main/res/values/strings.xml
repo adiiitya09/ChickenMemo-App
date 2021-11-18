@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ChickenMemo</string>
+    <string name="make_an_order">order details</string>
+    <array name="order_details">
+        <item>Live Chicken</item>
+        <item>Live Gaoran Chicken</item>
+        <item>Egg tray</item>
+        <item>Leg Piece</item>
+        <item>Chicken Lollipop</item>
+        <item>Chicken Kheema</item>
+        <item>Boneless Chicken</item>
+    </array>
+</resources>

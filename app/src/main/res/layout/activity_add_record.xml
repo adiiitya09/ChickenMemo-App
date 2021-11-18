@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textview1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/demo"
+
+    android:padding="8dp"
+    tools:context=".addRecord">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="customer name"
+                android:textSize="20dp"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/cutomer_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_button"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="items purchased"
+                android:textSize="20dp"
+                android:textStyle="normal|bold" />
+
+            <Spinner
+                android:id="@+id/spinner123"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_button"
+                android:textColor="#000000"
+                android:entries="@array/order_details" />
+
+            <TextView
+                android:id="@+id/name5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="total amount"
+                android:textSize="20dp"
+
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/total_amt121"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="#000000"
+                android:ems="10"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+
+                android:inputType="numberSigned"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/name6"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="advance amount"
+                android:textSize="20dp"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/adv_amt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:textColor="#000000"
+                android:inputType="numberSigned"
+                android:gravity="center"
+
+                android:background="@drawable/rounded_button"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/name7"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="balance amount"
+                android:textSize="20dp"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/bal_amt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:gravity="center"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/rounded_button"
+                android:ems="10"
+                android:textColor="#000000"
+                android:inputType="numberSigned"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_add_list"
+                android:layout_width="135dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button"
+                android:gravity="center|center_horizontal"
+                android:text="add record"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
